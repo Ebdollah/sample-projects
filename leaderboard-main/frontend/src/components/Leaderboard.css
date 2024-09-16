@@ -1,0 +1,60 @@
+.leaderboardHeading{
+  text-align: center;
+}
+
+.leaderboard-table {
+  width: 50%; /* Decreased width */
+  margin: 0 auto; /* Centering the table */
+  border-collapse: collapse;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold; /* Making header text bold */
+}
+
+.leaderboard-table th {
+  border-bottom: 2px solid orange;
+  color: blue;
+  padding: 8px;
+  font-size: large;
+  background-color: #f2f2f2;
+}
+
+.header-left {
+  text-align: left; /* Left-aligning text */
+  padding-left: 8px;
+}
+
+.even-row {
+  background-color: #ffffff;
+}
+
+.odd-row {
+  background-color: #eaf0ff;
+}
+
+.avatar img {
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.centered {
+  text-align: center; /* Centering text */
+}
+
+.team-details {
+
+}
+
+.badge {
+  color: #000;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-column {
+  display: flex;
+  align-items: center;
+  width: 200px; /* Wider team name column */
+}

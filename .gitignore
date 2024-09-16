@@ -1,0 +1,72 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build directories
+build/
+dist/
+
+# Environment variables
+.env
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# React Native
+.expo/
+
+# Miscellaneous
+.DS_Store
+*.pem
+*.p12
+*.cer
+*.crt
+*.key
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Coverage directory used by testing tools
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Serverless
+.serverless/
+
+# Logs and error reporting
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# MongoDB
+data/
+
+# Next.js
+.next/
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache/
+
+# Storybook files
+storybook-static/
+
+# SvelteKit build / staging artifacts
+.svelte-kit/
+
+# Mac OS specific files
+.DS_Store

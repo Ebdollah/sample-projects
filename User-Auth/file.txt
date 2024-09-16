@@ -1,0 +1,21 @@
+how the card is being shown as a pop-up.
+
+The "pop-up" behavior is achieved through CSS styling and conditional rendering.
+
+Here's the breakdown of how it works:
+
+1. **Conditional Rendering**: In the `ParentComponent`, the `<Card />` component is conditionally rendered based on the `isModalOpen` state variable. When `isModalOpen` is `true`, the `<Card />` component is rendered, and when it's `false`, the `<Card />` component is not present in the DOM.
+
+2. **Fixed Positioning and Styling**: Inside the `<Card />` component, I used a combination of CSS styles to make it appear as a pop-up. Specifically:
+   - `fixed`: This CSS property positions the element relative to the viewport. This means that even if you scroll the page, the pop-up remains fixed in the center of the screen.
+   - `top-0 left-0 w-full h-full`: These Tailwind CSS classes ensure that the pop-up covers the entire viewport.
+   - `flex items-center justify-center`: These classes ensure that the content of the pop-up is centered both horizontally and vertically within the viewport.
+   - `bg-black bg-opacity-50`: This gives the overlay a semi-transparent black background, making the rest of the page content appear dimmed or faded, emphasizing the pop-up.
+
+3. **State Management**: The `isModalOpen` state variable in the `ParentComponent` controls the visibility of the `<Card />` component. When you click the button, the `toggleModal` function updates the `isModalOpen` state. When the state is `true`, the `<Card />` is rendered due to conditional rendering. When the state is `false`, the `<Card />` component is not rendered, effectively "hiding" it.
+
+So, in essence:
+- The conditional rendering in `ParentComponent` controls whether the `<Card />` component is in the DOM or not.
+- The CSS styling in the `<Card />` component creates the visual effect of a pop-up centered on the screen.
+
+This combination of conditional rendering and styling tricks gives the appearance of a pop-up modal when you click the button in the `ParentComponent`.
